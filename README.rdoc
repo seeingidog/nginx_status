@@ -1,6 +1,6 @@
 = nginx_status
 
-Description goes here.
+Simple utility to download and parse nginx_status and return Hash attributes.
 
 == Contributing to nginx_status
  
