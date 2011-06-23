@@ -1,16 +1,18 @@
 require 'rubygems'
 require 'httparty'
 
-# Read Nginx status and return a Hash of current status counters
+# Simple Ruby library to download and parse /nginx_status and return Hash of Nginx counters
 
 class NginxStatus
   include HTTParty
-    
+
+  # Request status and send to parser    
   def self.get_status(host)
     response = get("http://#{host}/nginx_status").parsed_response
     parse_status(response)
   end
   
+  # Parse stub status, return Hash
   def self.parse_status(parsed_response)
     status = parsed_response.split("\n")
     rww = status[3].split

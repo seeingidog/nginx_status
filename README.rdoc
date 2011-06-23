@@ -1,7 +1,10 @@
 = nginx_status
 
-Simple utility to download and parse nginx_status and return Hash attributes.
+Simple Ruby library to download and parse /nginx_status and return Hash of Nginx counters
 
+	>> NginxStatus.get_status("host18.microscopemicroscopemicroscope.com")
+	=> {:waiting=>178, :handled=>914384, :reading=>3, :active_connections=>183, :accepted=>914384, :handles=>2725561, :writing=>2}
+	
 == Contributing to nginx_status
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
