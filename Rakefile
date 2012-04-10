@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "nginx_status"
   gem.homepage = "http://github.com/seeingidog/nginx_status"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: Simple Ruby library to download and parse /nginx_status and return Hash of Nginx counters}
-  gem.description = %Q{TODO: Simple Ruby library to download and parse /nginx_status and return Hash of Nginx counters}
+  gem.summary = %Q{Ruby library to download and parse /nginx_status}
+  gem.description = %Q{Simple Ruby library to download and parse /nginx_status. Returns a Hash of Nginx counters}
   gem.email = "ian@ruby-code.com"
   gem.authors = ["Ian Morgan"]
   # dependencies defined in Gemfile
