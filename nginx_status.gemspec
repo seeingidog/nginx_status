@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/nginx_status.rb",
+    "nginx_status.gemspec",
     "spec/nginx_status_spec.rb",
     "spec/spec_helper.rb"
   ]
